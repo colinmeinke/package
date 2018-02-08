@@ -11,7 +11,8 @@ A quick start JS package template.
   - `git remote set-url origin git@github.com:<user_or_organisation>/<project>.git`
 3. Install dependencies:
   - `yarn install`
-4. Replace all placeholders that have a prefix and suffix of `__` in the following files:
+4. Replace all placeholders that have a prefix and suffix of `__` in the
+   following files:
   - `package.json`
   - `rollup.config.js`
 
@@ -20,7 +21,8 @@ A quick start JS package template.
 ### Commit
 
 A command line helper to walk you through the process of writing
-[conventional commits](https://conventionalcommits.org).
+[conventional commits](https://conventionalcommits.org). This convention allows
+us to automate our release process.
 
 ```
 yarn commit
