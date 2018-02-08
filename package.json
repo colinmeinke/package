@@ -1,0 +1,55 @@
+{
+  "author": {
+    "name": "__AUTHOR_NAME__",
+    "email": "__AUTHOR_EMAIL__",
+    "url": "__AUTHOR_WEBSITE__"
+  },
+  "browserslist": "last 2 versions",
+  "bugs": {
+    "url": "__GITHUB_URL__/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "description": "__PACKAGE_DESCRIPTION__",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.39",
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^22.2.0",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "jest": "^21.3.0-beta.15",
+    "rollup": "^0.55.3",
+    "rollup-plugin-babel": "4.0.0-beta.1",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-plugin-uglify": "^3.0.0",
+    "semantic-release": "^12.4.1"
+  },
+  "homepage": "__GITHUB_URL__#readme",
+  "jest": {
+    "testRegex": "/tests/.*$"
+  },
+  "license": "__PACKAGE_LICENSE__",
+  "main": "cjs/index.js",
+  "module": "modules/index.js",
+  "name": "__PACKAGE_NAME__",
+  "repository": {
+    "type": "git",
+    "url": "__GITHUB_URL__"
+  },
+  "scripts": {
+    "build": "yarn build:cjs && yarn build:modules && yarn build:umd",
+    "build:cjs": "NODE_ENV=production BABEL_ENV=cjs babel src --out-dir cjs",
+    "build:modules": "NODE_ENV=production BABEL_ENV=modules babel src --out-dir modules",
+    "build:umd": "NODE_ENV=production BABEL_ENV=umd rollup -c",
+    "commit": "git-cz",
+    "test": "jest",
+    "tidy": "rm -rf modules cjs dist yarn-error.log"
+  },
+  "version": "0.0.0-development"
+}
