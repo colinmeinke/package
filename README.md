@@ -2,8 +2,6 @@
 
 A quick start JS package template.
 
-**Currently a work in progress, do not use yet.**
-
 ## Features
 
 - Automated releases with
@@ -14,7 +12,7 @@ A quick start JS package template.
 ## Setup
 
 1. Clone this repository
-    - `git clone git@github.com/colinmeinke/package.git __PROJECT_NAME__`
+    - `git clone git@github.com:colinmeinke/package.git __PROJECT_NAME__`
 2. Change to your new project directory
     - `cd __PROJECT_NAME__`
 3. Kill the existing `.git` directory and reinitialise with a new repository:
@@ -30,8 +28,9 @@ A quick start JS package template.
     - `yarn setup:semantic-release`
         - Use `https://registry.npmjs.org/` as your npm registry
         - You will need [npm login credentials](https://www.npmjs.com/signup)
+          and to have verified your email with npm
         - Select **Travis CI** when asked which CI you wish to use
-        - Select **no** when asked about adding a `.travis.yml` file
+        - Type **n** when asked about adding a `.travis.yml` file
 
 **placeholders have a prefix and suffix of `__`*
 
@@ -58,7 +57,7 @@ yarn commit
 
 ### Build
 
-To output:
+To manually run the build process and output:
 
 - CommonJS to `/cjs`
 - ES2015 modules to `/modules`
