@@ -18,11 +18,11 @@ A quick start JS package template.
   - `git remote set-url origin git@github.com:<user_or_organisation_name>/<project_name>.git`
 3. Install dependencies:
   - `yarn install`
-4. Replace all placeholders * in:
+4. Replace all placeholders* in:
   - `package.json`
   - `rollup.config.js`
 
-** placeholders have a prefix and suffix of `__`*
+**placeholders have a prefix and suffix of `__`*
 
 ## Usage
 
