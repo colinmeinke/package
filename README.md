@@ -30,6 +30,7 @@ A quick start JS package template.
         - Use `https://registry.npmjs.org/` as your npm registry
         - You will need [npm login credentials](https://www.npmjs.com/signup)
           and to have verified your email with npm
+        - You will need to [sign in to Travis CI](https://travis-ci.org/signin)
         - Select **Travis CI** when asked which CI you wish to use
         - Type **n** when asked about adding a `.travis.yml` file
 
