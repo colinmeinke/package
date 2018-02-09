@@ -5,6 +5,7 @@ A quick start JS package template.
 ## Features
 
 - Automated releases with
+  [Travis CI](https://travis-ci.org) and
   [Semantic Release](https://github.com/semantic-release/semantic-release).
 - CommonJS, ES2015 modules and UMD builds.
 - Testing with [Jest](https://github.com/facebook/jest).
