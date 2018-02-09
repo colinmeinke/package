@@ -34,7 +34,7 @@
   "jest": {
     "testRegex": "/tests/.*$"
   },
-  "license": "__PROJECT_LICENSE__",
+  "license": "MIT",
   "main": "cjs/index.js",
   "module": "modules/index.js",
   "name": "__PROJECT_NAME__",
