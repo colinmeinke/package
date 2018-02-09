@@ -8,7 +8,7 @@ export default {
   output: {
     file: 'dist/index.min.js',
     format: 'umd',
-    name: '__PACKAGE_NAME__'
+    name: '__PROJECT_NAME__'
   },
   plugins: [
     babel(),
