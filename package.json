@@ -28,7 +28,9 @@
     "rollup-plugin-commonjs": "^8.3.0",
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-uglify": "^3.0.0",
-    "semantic-release": "^12.4.1"
+    "semantic-release": "^12.4.1",
+    "semantic-release-cli": "^3.6.2",
+    "travis-deploy-once": "^4.3.4"
   },
   "homepage": "__GITHUB_URL__#readme",
   "jest": {
@@ -48,8 +50,12 @@
     "build:modules": "NODE_ENV=production BABEL_ENV=modules babel src --out-dir modules",
     "build:umd": "NODE_ENV=production BABEL_ENV=umd rollup -c",
     "commit": "git-cz",
+    "prepublish": "yarn tidy && yarn build",
+    "semantic-release": "semantic-release",
+    "setup:semantic-release": "semantic-release-cli setup",
     "test": "jest",
-    "tidy": "rm -rf modules cjs dist yarn-error.log"
+    "tidy": "rm -rf modules cjs dist yarn-error.log",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "version": "0.0.0-development"
 }

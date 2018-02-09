@@ -14,13 +14,24 @@ A quick start JS package template.
 ## Setup
 
 1. Clone this repository
-2. Update the git remote:
-  - `git remote set-url origin git@github.com:<user_or_organisation_name>/<project_name>.git`
-3. Install dependencies:
+  - `git clone git@github.com/colinmeinke/package.git __PROJECT_NAME__`
+2. Change to your new project directory
+  - `cd __PROJECT_NAME__`
+3. Kill `/.git` directory and reinitialise git with a new repository:
+  - `rm -rf `.git`
+  - `git init`
+  - `git remote add origin git@github.com:__USER_OR_ORGANISATION_NAME__/__PROJECT_NAME__.git`
+4. Install dependencies:
   - `yarn install`
-4. Replace all placeholders* in:
+5. Replace all placeholders* in:
   - `package.json`
   - `rollup.config.js`
+6. Setup Semantic Release using the CLI:
+  - `yarn setup:semantic-release`
+    - Use `https://registry.npmjs.org/` as your npm registry
+    - You will need [npm login credentials](https://www.npmjs.com/signup)
+    - Select **Travis CI** when asked which CI you wish to use
+    - Select **no** when asked about adding a `.travis.yml` file
 
 **placeholders have a prefix and suffix of `__`*
 
