@@ -50,7 +50,7 @@
     "build:modules": "NODE_ENV=production BABEL_ENV=modules babel src --out-dir modules",
     "build:umd": "NODE_ENV=production BABEL_ENV=umd rollup -c",
     "commit": "git-cz",
-    "prepublish": "yarn tidy && yarn build",
+    "prepare": "yarn tidy && yarn build",
     "semantic-release": "semantic-release",
     "setup:semantic-release": "semantic-release-cli setup",
     "test": "jest",
