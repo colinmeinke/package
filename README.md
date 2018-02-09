@@ -17,8 +17,8 @@ A quick start JS package template.
   - `git clone git@github.com/colinmeinke/package.git __PROJECT_NAME__`
 2. Change to your new project directory
   - `cd __PROJECT_NAME__`
-3. Kill `/.git` directory and reinitialise git with a new repository:
-  - `rm -rf `.git`
+3. Kill the existing `.git` directory and reinitialise with a new repository:
+  - `rm -rf .git`
   - `git init`
   - `git remote add origin git@github.com:__USER_OR_ORGANISATION_NAME__/__PROJECT_NAME__.git`
 4. Install dependencies:
